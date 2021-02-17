@@ -1,0 +1,47 @@
+OBJECTIF: 
+    Etablir bon de commande
+
+TACHES RESTANTES A FAIRE : 
+
+    Côté Affichage:
+        ☐ Affichage :
+            ✔ montant total @done (29/01/2021 à 22:33:20)
+            ✔ remise global @done (30/01/2021 à 09:07:47)
+            ✔ ttc hors taxe @done (29/01/2021 à 22:33:42)
+            ✔ ttc avec tva @done (29/01/2021 à 22:33:55)
+        ☐ Exporter en fichier pdf pour voir bon et bien clair le bon de commande
+        ☐ Afficher la valeur de devise selon la devise séléctionnée
+        ☐ Insérer Montant a payer temporaire dans motant_a_payer final
+        ☐ Petite Apprentissage : Réapprendre à manipuler une page php en PDF 
+
+    Côté Métier:
+        ✔ Créaction d'une fonction get_Montant_A_Payer permettant de voir le montant total à payer par le client @done (29/01/2021 à 22:35:42)
+        ✔ Ajouter la fonction dans le contôleur @done (29/01/2021 à 22:35:59)
+        ☐ Gérer les exceptions d'erreur:
+            ☐ Vérifier si le client a déja entrer l'entête
+                2cas : 
+                    ☐ Pas d'entête : 
+                        Alors Affichage de Message d'Erreur: "Veuillez entrer l'Entête"
+                        Il ne peut pas poursuivre vers la commande
+                    ☐  Entête : 
+                        Peut poursuivre sa commande
+            ☐ Idem pour l'insertion de la commande
+
+    Côté Base:
+        ✔ Créer un view permettant d'afficher les montants à payer par le client @done (29/01/2021 à 22:36:08)
+            ✔ Mettre l'id_Entête dans le view et group by id_Entête @done (29/01/2021 à 22:38:00)
+            ✔ Sommer pour avoir les montants voulus @done (29/01/2021 à 22:37:55)
+        ✔ Créer une table Montant_Total_Paye_Final @done (30/01/2021 à 08:34:43)
+
+ 
+/*---
+Prevision_Avec_Depart_Arrivee
+Penalité : c'est la durée qui compte
+
+Prevision : misy départ sy arrivé ()
+getDetailsPrevision() -> Details_Previsions (order by)
+Escale : détails plusieurs prévisions
+get_Duree(String Q1,Connection con)
+get_Montant(String Q1,double duree,Connection c)
+convertir(double montant,String devise,String ,String )
+---*/

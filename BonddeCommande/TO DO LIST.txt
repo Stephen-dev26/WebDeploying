@@ -1,0 +1,15 @@
+TO DO LIST BON DE COMMANDE : 
+
+Objectif : Créer une page qui permet d'afficher un bon de commande 
+
+Conception base :
+Création  
++Fournisseur (id_Fournisseur,nom_Fournisseur,adresse_Fournisseur,num_Fournisseur,responsable,email_Fournisseur)
+
+Saisir Bonde Commande 
+
+
+BON DE COMMANDE:
++Je stocker mes commandes dans une table temporaire
++Je crée une table entête bon de commande pour pouvoir stocker l'entête d'un bon de commande de commande
++Afficher la valeur en fonction du devise séléctionnez
